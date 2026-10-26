@@ -5,7 +5,7 @@ using TMPro;                        //Libreria para referenciar objetos de Text 
 public class GameManager : MonoBehaviour
 {
     public int points;                      //Cantidad de puntos actuales del jugador
-    public int winPoints;                   //Cantidad de puntos para ganar
+    //public int winPoints;                   //Cantidad de puntos para ganar
 
     public TMP_Text pointsText;             //Referencia al texto de puntos actuales
     public GameObject winPanel;             //Referencia al panel de victoria
@@ -21,10 +21,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         pointsText.text = "Points: " + points.ToString();
-        if (points >= winPoints)
+      /*  if (points >= winPoints)
         {
             winPanel.SetActive(true);
-        }
+        }*/
     }
 
     // METODOS PERSONALIZADOS (son llamados desde los botones del menu)

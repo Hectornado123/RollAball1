@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Salto : MonoBehaviour
@@ -5,8 +6,8 @@ public class Salto : MonoBehaviour
     
     private Rigidbody rb;               
     public float speed;                
-    public float jumpForce;            
-
+    public float jumpForce;
+    public GameManager gameManager;
     public Vector3 respawnPoint;       
     public float fallLimit;             
 
@@ -17,6 +18,8 @@ public class Salto : MonoBehaviour
   
     void Start()
     {
+
+        gameManager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody>();            
         respawnPoint = transform.position;
     }
@@ -38,6 +41,7 @@ public class Salto : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            gameManager.points++;
             Destroy(other.gameObject);
         }
     }
