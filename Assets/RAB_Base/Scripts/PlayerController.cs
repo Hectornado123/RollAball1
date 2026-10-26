@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y < fallLimit)
         {
-            Respawn();
+           // Respawn();
         }
     }
 
@@ -47,20 +47,20 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Respawn();
+           // Respawn();
         }
     }
 
 
     // METODO TRIGGER para derectar el contacto con los coleccionables
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("PickUp"))
-        {
-            gameManager.points++;       //Suma 1 a la variable points del GameManager
-            Destroy(other.gameObject);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.CompareTag("PickUp"))
+    //    {
+    //        gameManager.points++;       //Suma 1 a la variable points del GameManager
+    //        Destroy(other.gameObject);
+    //    }
+    //}
 
     void Movement()
     {
@@ -76,9 +76,9 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-    void Respawn()
-    {
-        rb.linearVelocity = Vector3.zero;             //Resetear la velocidad del Rigidbody
-        transform.position = respawnPoint;      //Resetar la posici�n del player
-    }
+    //void Respawn()
+    //{
+    //    rb.linearVelocity = Vector3.zero;             //Resetear la velocidad del Rigidbody
+    //    transform.position = respawnPoint;      //Resetar la posici�n del player
+    //}
 }

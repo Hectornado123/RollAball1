@@ -35,8 +35,10 @@ public class Salto : MonoBehaviour
     }
 
 
-
     
+        
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp"))
@@ -44,6 +46,9 @@ public class Salto : MonoBehaviour
             gameManager.points++;
             Destroy(other.gameObject);
         }
+
+       
+
     }
 
     void Movement()
@@ -70,13 +75,21 @@ public class Salto : MonoBehaviour
 
     void Respawn()
     {
-        rb.linearVelocity = Vector3.zero;      
-        transform.position = respawnPoint;     
+       
+        rb.angularVelocity = Vector3.zero;
+        //rb.linearVelocity = Vector3.zero;      
+        transform.position = respawnPoint;
+        jumpForce = 200;    
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         tocandoSuelo = true;
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Respawn();
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
