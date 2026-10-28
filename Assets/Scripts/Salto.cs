@@ -9,8 +9,8 @@ public class Salto : MonoBehaviour
     public float jumpForce;
     public GameManager gameManager;
     public Vector3 respawnPoint;       
-    public float fallLimit;             
-
+    public float fallLimit;
+    float maxSpeed = 10;
     private bool tocandoSuelo;
 
 
@@ -32,6 +32,7 @@ public class Salto : MonoBehaviour
         {
             Respawn();
         }
+        LimitarVelocidad();
     }
 
 
@@ -79,17 +80,37 @@ public class Salto : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         //rb.linearVelocity = Vector3.zero;      
         transform.position = respawnPoint;
-        jumpForce = 200;    
+        jumpForce = 300;    
     }
 
-    private void OnCollisionEnter(Collision collision)
+   private void OnCollisionEnter(Collision collision)
     {
         tocandoSuelo = true;
 
-        if (collision.gameObject.CompareTag("Obstacle"))
+        /* if (collision.gameObject.CompareTag("Obstacle"))
         {
             Respawn();
-        }
+        }*/
+    }
+
+    void LimitarVelocidad()
+    {
+        // Obtengo la velocidad horizontal de la bola
+        Vector3 horizontal = new Vector3(
+            rb.linearVelocity.x,
+            0,
+            rb.linearVelocity.z
+        );
+
+        // Limito su magnitud a maxSpeed
+        horizontal = Vector3.ClampMagnitude(horizontal, maxSpeed);
+
+        // Mantengo la velocidad vertical
+        rb.linearVelocity = new Vector3(
+            horizontal.x,
+            rb.linearVelocity.y,
+            horizontal.z
+        );
     }
     private void OnCollisionExit(Collision collision)
     {
