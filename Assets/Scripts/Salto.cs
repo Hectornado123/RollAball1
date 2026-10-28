@@ -87,10 +87,10 @@ public class Salto : MonoBehaviour
     {
         tocandoSuelo = true;
 
-        /* if (collision.gameObject.CompareTag("Obstacle"))
+         if (collision.gameObject.CompareTag("enemy"))
         {
             Respawn();
-        }*/
+        }
     }
 
     void LimitarVelocidad()
