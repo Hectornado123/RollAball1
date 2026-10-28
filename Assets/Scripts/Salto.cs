@@ -62,7 +62,7 @@ public class Salto : MonoBehaviour
         {
             if (tocandoSuelo)
             {
-                jumpForce = 200;
+                jumpForce = 400;
             }
         }
         else { jumpForce = 0; }
