@@ -5,7 +5,7 @@ public class trigermeta : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("meta"))
+        if (other.CompareTag("finish"))
         {
             SceneManager.LoadScene("nivel 2");
         }
