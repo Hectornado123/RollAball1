@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;  //Libreria para cambiar de escenas, cerrar juego, etc
-using TMPro;                        //Libreria para referenciar objetos de Text Mesh Pro
+using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;                        //Libreria para referenciar objetos de Text Mesh Pro
 
 public class GameManager : MonoBehaviour
 {
     public int points;                      //Cantidad de puntos actuales del jugador
     //public int winPoints;                   //Cantidad de puntos para ganar
 
-    public TMP_Text pointsText;             //Referencia al texto de puntos actuales
+    public TMP_Text pointsText;  //Referencia al texto de puntos actuales
     public GameObject winPanel;             //Referencia al panel de victoria
 
 
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
             winPanel.SetActive(true);
         }*/
     }
-
+   
     // METODOS PERSONALIZADOS (son llamados desde los botones del menu)
     public void RestartGame(int sceneToLoad)
     {
