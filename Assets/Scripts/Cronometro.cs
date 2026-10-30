@@ -3,7 +3,7 @@ using TMPro;
 public class Cronometro : MonoBehaviour
 {
 
-    public TextMeshProUGUI
+    //public TextMeshProUGUI;
     float contador = 300;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,7 +16,7 @@ public class Cronometro : MonoBehaviour
     void Update()
     {
         contador = contador - Time.deltaTime;
-        textoGUI.text = contador.ToString();
+       // textoGUI.text = contador.ToString();
 
     }
 
