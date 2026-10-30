@@ -1,12 +1,10 @@
 using System;
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 public class Salto : MonoBehaviour
 {
     
-    private Rigidbody rb;
-    public GameObject Puerta1;
+    private Rigidbody rb;               
     public float speed;                
     public float jumpForce;
     public GameManager gameManager;
@@ -20,7 +18,7 @@ public class Salto : MonoBehaviour
   
     void Start()
     {
-        Puerta1.SetActive(true);
+
         gameManager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody>();            
         respawnPoint = transform.position;
@@ -47,17 +45,10 @@ public class Salto : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             gameManager.points++;
-           
             Destroy(other.gameObject);
-
-        }
-        if (other.gameObject.CompareTag("button"))
-        {
-            GetComponent<Renderer>().material.color = Color.cyan;
-            //GetComponent<Renderer>().material.color = new Color(255,0,0);
-            Puerta1.SetActive(false);
         }
 
+       
 
     }
 
