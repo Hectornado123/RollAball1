@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb77dc9bdabea71449ae36c1a958262a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Salto
-  speed: 40
+  speed: 4
   jumpForce: 0
   gameManager: {fileID: 0}
   respawnPoint: {x: 0, y: 0, z: 0}
