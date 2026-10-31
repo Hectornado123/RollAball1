@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class trigermeta : MonoBehaviour
+public class TrigerMeta : MonoBehaviour
 {
+
+    public int points2;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("finish"))
         {
-            SceneManager.LoadScene("nivel 2");
+
+            Debug.Log("tienes" + points2);
+            //SceneManager.LoadScene("nivel 2");
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

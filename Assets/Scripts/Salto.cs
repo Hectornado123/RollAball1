@@ -8,6 +8,7 @@ public class Salto : MonoBehaviour
     public float speed;                
     public float jumpForce;
     public GameManager gameManager;
+    public TrigerMeta tm;
     public Vector3 respawnPoint;       
     public float fallLimit;
     float maxSpeed = 10;
@@ -44,8 +45,11 @@ public class Salto : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
-            gameManager.points++;
+           
+            
             Destroy(other.gameObject);
+            gameManager.points++;
+            tm.points2++;
         }
 
        
