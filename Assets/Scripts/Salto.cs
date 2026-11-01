@@ -9,7 +9,8 @@ public class Salto : MonoBehaviour
     public float jumpForce;
     public GameManager gameManager;
     public TrigerMeta tm;
-    public Vector3 respawnPoint;       
+    public Vector3 respawnPoint;
+    public GameObject Puerta;
     public float fallLimit;
     float maxSpeed = 10;
     private bool tocandoSuelo;
@@ -52,7 +53,13 @@ public class Salto : MonoBehaviour
             tm.points2++;
         }
 
-       
+        if (other.gameObject.CompareTag("Button"))
+        {
+
+            GetComponent<Renderer>().material.color = Color.cyan;
+            Puerta.SetActive(false);
+
+        }
 
     }
 
