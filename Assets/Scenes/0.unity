@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 34293067}
   - component: {fileID: 34293069}
   m_Layer: 5
-  m_Name: Image
+  m_Name: estrella 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
   points2: 0
 --- !u!1001 &114978583
 PrefabInstance:
@@ -1257,7 +1258,7 @@ Transform:
   m_GameObject: {fileID: 416889383}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.556, z: -0.08}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4218,7 +4219,7 @@ GameObject:
   - component: {fileID: 1140762319}
   - component: {fileID: 1140762323}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: estrella 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4322,6 +4323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
   points2: 0
 --- !u!1 &1158715294
 GameObject:
@@ -4430,7 +4432,7 @@ Transform:
   m_GameObject: {fileID: 1158715294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.017259516, z: -0, w: 0.99985105}
-  m_LocalPosition: {x: 6.15, y: -2.83, z: 154.49}
+  m_LocalPosition: {x: 6.17, y: -2.83, z: 155.02}
   m_LocalScale: {x: 17.599146, y: 1, z: 2.4885}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4448,6 +4450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::trigermeta
+  imagenUI: {fileID: 0}
   points2: 0
 --- !u!1 &1184610256
 GameObject:
@@ -4905,6 +4908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
   points2: 0
 --- !u!4 &1328495546
 Transform:
@@ -5291,13 +5295,14 @@ GameObject:
   - component: {fileID: 1455684033}
   - component: {fileID: 1455684035}
   - component: {fileID: 1455684034}
+  - component: {fileID: 1455684036}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: estrella 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1455684033
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5355,6 +5360,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455684032}
   m_CullTransparentMesh: 1
+--- !u!114 &1455684036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455684032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
+  points2: 0
 --- !u!1001 &1461031325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5837,8 +5856,8 @@ Transform:
   m_GameObject: {fileID: 1975940890}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7044276, z: -0, w: 0.70977587}
-  m_LocalPosition: {x: -87.13, y: -2.54, z: -0.51}
-  m_LocalScale: {x: 20, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -87.13, y: -0.68, z: -0.51}
+  m_LocalScale: {x: 20, y: 5.065821, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952358189}
@@ -6066,13 +6085,14 @@ GameObject:
   - component: {fileID: 2016733263}
   - component: {fileID: 2016733262}
   - component: {fileID: 2016733264}
+  - component: {fileID: 2016733265}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: estrella 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2016733261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6142,6 +6162,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
+  points2: 0
+--- !u!114 &2016733265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016733260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 0}
   points2: 0
 --- !u!1 &2028439261
 GameObject:
