@@ -35,6 +35,7 @@ public class Salto : MonoBehaviour
             Respawn();
         }
         LimitarVelocidad();
+        Debug.Log("puntos2=" + tm.points2);
     }
 
 
@@ -46,11 +47,11 @@ public class Salto : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
-           
-            
             Destroy(other.gameObject);
             gameManager.points++;
             tm.points2++;
+           
+           
         }
 
         if (other.gameObject.CompareTag("Button"))

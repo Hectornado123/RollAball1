@@ -24,12 +24,21 @@ public class TrigerMeta : MonoBehaviour
         {
             if (imagenUI != null)
                 imagenUI.enabled = true; // Mostrar imagen
+
+            if (points2 >= 5)
+            {
+                imagenUI2.enabled = true;
+
+            }
+
         }
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        points2 = 0;
         // Ocultar la imagen al inicio
         if (imagenUI != null)
         {
@@ -42,7 +51,7 @@ public class TrigerMeta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("tienes" + points2);
     }
     
 }
