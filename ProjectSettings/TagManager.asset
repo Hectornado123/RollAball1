@@ -9,6 +9,7 @@ TagManager:
   - PickUp
   - enemy
   - Image
+  - Button
   layers:
   - Default
   - TransparentFX

@@ -9,19 +9,41 @@ public class TrigerMeta : MonoBehaviour
     public Image imagenUI3;
 
     public int points2;
+    public bool Finish;
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("finish"))
+        if (other.CompareTag("Finish"))
         {
-
-            Debug.Log("tienes" + points2);
             //SceneManager.LoadScene("nivel 2");
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
         {
+            Finish = true;
+        }
+
+    }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+        Finish = false;
+        points2 = 0;
+        // Ocultar la imagen al inicio
+        if (imagenUI != null)
+        {
+            imagenUI.enabled = false;
+            imagenUI2.enabled = false;
+            imagenUI3.enabled = false;
+        }
+    }
+    private void Update()
+    {
+        if (Finish == true)
+        {
+            Debug.Log("tienes" + points2);
             if (imagenUI != null)
                 imagenUI.enabled = true; // Mostrar imagen
 
@@ -35,23 +57,7 @@ public class TrigerMeta : MonoBehaviour
                 imagenUI3.enabled = true;
 
             }
-
-        }
-
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-        points2 = 0;
-        // Ocultar la imagen al inicio
-        if (imagenUI != null)
-        {
-            imagenUI.enabled = false;
-            imagenUI2.enabled = false;
-            imagenUI3.enabled = false;
         }
     }
-    
-    
+
 }

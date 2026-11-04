@@ -15,12 +15,12 @@ public class Salto : MonoBehaviour
     float maxSpeed = 10;
     private bool tocandoSuelo;
 
-
+    public GameObject Meta;
 
   
     void Start()
     {
-
+       
         gameManager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody>();            
         respawnPoint = transform.position;
@@ -49,9 +49,9 @@ public class Salto : MonoBehaviour
         {
             Destroy(other.gameObject);
             gameManager.points++;
-            tm.points2++;
+            //tm.points2++;
+            Meta.GetComponent<TrigerMeta>().points2++;
             Debug.Log(tm.points2);
-           
         }
 
         if (other.gameObject.CompareTag("Button"))
