@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         pointsText.text = "Points: " + points.ToString();
 
-       
+
       /*  if (points >= winPoints)
         {
             winPanel.SetActive(true);
