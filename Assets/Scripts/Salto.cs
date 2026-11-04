@@ -35,7 +35,7 @@ public class Salto : MonoBehaviour
             Respawn();
         }
         LimitarVelocidad();
-        Debug.Log("puntos2=" + tm.points2);
+       // Debug.Log("puntos2=" + tm.points2);
     }
 
 
@@ -50,7 +50,7 @@ public class Salto : MonoBehaviour
             Destroy(other.gameObject);
             gameManager.points++;
             tm.points2++;
-           
+            Debug.Log(tm.points2);
            
         }
 

@@ -30,6 +30,11 @@ public class TrigerMeta : MonoBehaviour
                 imagenUI2.enabled = true;
 
             }
+            if (points2 >= 8)
+            {
+                imagenUI3.enabled = true;
+
+            }
 
         }
 
@@ -47,11 +52,6 @@ public class TrigerMeta : MonoBehaviour
             imagenUI3.enabled = false;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("tienes" + points2);
-    }
+    
     
 }
