@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - PickUp
   - enemy
+  - Image
+  - Button
   layers:
   - Default
   - TransparentFX

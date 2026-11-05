@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         pointsText.text = "Points: " + points.ToString();
+
+
       /*  if (points >= winPoints)
         {
             winPanel.SetActive(true);
