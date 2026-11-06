@@ -3154,7 +3154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abbc71f6b9a5614eb9f8d4e5dd942ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PaloquegiraxD
-  velocidad: 100
+  velocidad: 20
 --- !u!65 &1354480064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3280,7 +3280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abbc71f6b9a5614eb9f8d4e5dd942ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PaloquegiraxD
-  velocidad: 100
+  velocidad: 20
 --- !u!65 &1501954243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4103,7 +4103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abbc71f6b9a5614eb9f8d4e5dd942ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PaloquegiraxD
-  velocidad: 100
+  velocidad: 10
 --- !u!1 &1798249849
 GameObject:
   m_ObjectHideFlags: 0
