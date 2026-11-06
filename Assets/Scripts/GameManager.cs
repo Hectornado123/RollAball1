@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     //public int winPoints;                   //Cantidad de puntos para ganar
 
     public TMP_Text pointsText;             //Referencia al texto de puntos actuales
-    public GameObject winPanel;             //Referencia al panel de victoria
+    //Referencia al panel de victoria
 
 
     // METODO START
