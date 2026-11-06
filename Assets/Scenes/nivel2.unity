@@ -3905,6 +3905,7 @@ MonoBehaviour:
   respawnPoint: {x: 0, y: 0.92, z: -0.08}
   Puerta: {fileID: 1321113886}
   fallLimit: -100
+  Meta: {fileID: 0}
 --- !u!114 &1537715736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4269,7 +4270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3f33e726126a8b45829c2a59728e338, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 49.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3f33e726126a8b45829c2a59728e338, type: 3}
       propertyPath: m_LocalPosition.z
