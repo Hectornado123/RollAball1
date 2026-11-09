@@ -16,7 +16,7 @@ public class TrigerMeta : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            //SceneManager.LoadScene("nivel 2");
+            Invoke("PasarEscena", 5);
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
@@ -25,9 +25,16 @@ public class TrigerMeta : MonoBehaviour
         }
 
     }
+
+    public void PasarEscena()
+    {
+        SceneManager.LoadScene("nivel2");
+
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
 
         Finish = false;
         points2 = 0;
