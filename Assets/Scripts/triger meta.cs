@@ -16,11 +16,7 @@ public class TrigerMeta : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-<<<<<<< HEAD
-           
-=======
-            //SceneManager.LoadScene("nivel 2");
->>>>>>> parent of 2376594 (PasarNivel)
+
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
