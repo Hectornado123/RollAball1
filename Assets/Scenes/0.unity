@@ -1261,6 +1261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Towel_00
       objectReference: {fileID: 0}
+    - target: {fileID: 8523476780797881957, guid: 6a11edc0f3911b349b3558653f2de380, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -16,11 +16,13 @@ public class TrigerMeta : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            Invoke("PasarEscena", 5);
+           
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Has llegado");
+            Invoke("PasarEscena", 5);
             Finish = true;
         }
 
@@ -34,8 +36,8 @@ public class TrigerMeta : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
 
+       
         Finish = false;
         points2 = 0;
         // Ocultar la imagen al inicio
