@@ -16,7 +16,11 @@ public class TrigerMeta : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
+<<<<<<< HEAD
            
+=======
+            //SceneManager.LoadScene("nivel 2");
+>>>>>>> parent of 2376594 (PasarNivel)
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
@@ -25,12 +29,6 @@ public class TrigerMeta : MonoBehaviour
             Invoke("PasarEscena", 5);
             Finish = true;
         }
-
-    }
-
-    public void PasarEscena()
-    {
-        SceneManager.LoadScene("nivel2");
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
