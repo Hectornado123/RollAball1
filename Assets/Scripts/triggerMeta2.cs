@@ -7,7 +7,7 @@ public class triggerMeta2 : MonoBehaviour
     public Image imagenUI2;
     public Image imagenUI3;
 
-    public int points2;
+    public int points3;
     public bool Finish;
 
 
@@ -28,7 +28,7 @@ public class triggerMeta2 : MonoBehaviour
 
     public void PasarEscena()
     {
-        SceneManager.LoadScene("Nivel 3.1");
+        SceneManager.LoadScene("nivel2");
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,7 +37,7 @@ public class triggerMeta2 : MonoBehaviour
 
 
         Finish = false;
-        points2 = 0;
+        points3 = 0;
         // Ocultar la imagen al inicio
         if (imagenUI != null)
         {
@@ -50,16 +50,16 @@ public class triggerMeta2 : MonoBehaviour
     {
         if (Finish == true)
         {
-            Debug.Log("tienes" + points2);
+            Debug.Log("tienes" + points3);
             if (imagenUI != null)
                 imagenUI.enabled = true; // Mostrar imagen
 
-            if (points2 >= 5)
+            if (points3 >= 5)
             {
                 imagenUI2.enabled = true;
 
             }
-            if (points2 >= 8)
+            if (points3 >= 8)
             {
                 imagenUI3.enabled = true;
 

@@ -9,6 +9,7 @@ public class Salto : MonoBehaviour
     public float jumpForce;
     public GameManager gameManager;
     public TrigerMeta tm;
+    public triggerMeta2 tm2;
     public Vector3 respawnPoint;
     public GameObject Puerta;
     public float fallLimit;
@@ -51,6 +52,7 @@ public class Salto : MonoBehaviour
             gameManager.points++;
             //tm.points2++;
             Meta.GetComponent<TrigerMeta>().points2++;
+            Meta.GetComponent<triggerMeta2>().points3++;
             Debug.Log(tm.points2);
         }
 
