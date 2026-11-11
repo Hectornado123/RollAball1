@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class Enemigo2 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    public float velocidad;
+
     void Update()
     {
-        
+        if (transform.position.x > 31.7)
+        {
+            velocidad = -velocidad;
+        }
+        transform.Translate(velocidad * Time.deltaTime, 0, 0);
+        if (transform.position.x < 10)
+        {
+            velocidad = -velocidad;
+        }
+        transform.Translate(velocidad * Time.deltaTime, 0, 0);
     }
 }

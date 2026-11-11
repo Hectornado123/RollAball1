@@ -15,19 +15,20 @@ public class triggerMeta2 : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            Invoke("PasarEscena", 1);
+          
         }
         // Verificar si el objeto que entra es el jugador
         if (other.CompareTag("Player"))
         {
             Finish = true;
+            Invoke("PasarEscena", 4);
         }
 
     }
 
     public void PasarEscena()
     {
-        SceneManager.LoadScene("nivel3");
+        SceneManager.LoadScene("Nivel 3.1");
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
