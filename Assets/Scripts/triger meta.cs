@@ -22,10 +22,15 @@ public class TrigerMeta : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Has llegado");
-            Invoke("PasarEscena", 5);
+            Invoke("PasarEscena", 4);
             Finish = true;
         }
 
+    }
+
+    public void PasarEscena()
+    {
+        SceneManager.LoadScene("nivel2");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
