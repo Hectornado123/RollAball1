@@ -22,7 +22,7 @@ public class TrigerMeta : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Has llegado");
-            Invoke("PasarEscena", 4);
+            Invoke("PasarEscena", 2);
             Finish = true;
         }
 
