@@ -7,12 +7,12 @@ public class Enemigo2 : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x > 31.7)
+        if (transform.position.x > 17.15)
         {
             velocidad = -velocidad;
         }
         transform.Translate(velocidad * Time.deltaTime, 0, 0);
-        if (transform.position.x < 10)
+        if (transform.position.x < -8.5)
         {
             velocidad = -velocidad;
         }

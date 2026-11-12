@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class triggerMeta2 : MonoBehaviour
 {
-    public Image imagenUI; // Asigna la imagen desde el Inspector
+    public Image imagenUI; 
     public Image imagenUI2;
     public Image imagenUI3;
 
@@ -28,7 +28,7 @@ public class triggerMeta2 : MonoBehaviour
 
     public void PasarEscena()
     {
-        SceneManager.LoadScene("nivel2");
+        SceneManager.LoadScene("Nivel 3.1");
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

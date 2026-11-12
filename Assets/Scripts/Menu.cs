@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour
     public void Iniciar()
     {
         Debug.Log("A");
-        SceneManager.LoadScene("nivel2");
+        SceneManager.LoadScene("0");
     }
 
    
