@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MetaTiempo : MonoBehaviour
 {
@@ -62,6 +63,16 @@ public class MetaTiempo : MonoBehaviour
             {
                 estrella3.SetActive(false);
             }
+
+            Invoke("cargarmainmenu", 5);
         }
+
+
+    }
+
+    public void cargarmainmenu() {
+
+        SceneManager.LoadScene("MainMenu");
+    
     }
 }
