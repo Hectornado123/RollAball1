@@ -48,6 +48,8 @@ public class triggerMeta2 : MonoBehaviour
     }
     private void Update()
     {
+
+        Debug.Log("tienes" + points3);
         if (Finish == true)
         {
             Debug.Log("tienes" + points3);

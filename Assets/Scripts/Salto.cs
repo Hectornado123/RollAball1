@@ -53,7 +53,8 @@ public class Salto : MonoBehaviour
             //tm.points2++;
             Meta.GetComponent<TrigerMeta>().points2++;
             Meta.GetComponent<triggerMeta2>().points3++;
-            Debug.Log(tm.points2);
+            Debug.Log(tm2.points3);
+           
         }
 
         if (other.gameObject.CompareTag("Button"))
@@ -109,17 +110,16 @@ public class Salto : MonoBehaviour
 
     void LimitarVelocidad()
     {
-        // Obtengo la velocidad horizontal de la bola
+       
         Vector3 horizontal = new Vector3(
             rb.linearVelocity.x,
             0,
             rb.linearVelocity.z
         );
 
-        // Limito su magnitud a maxSpeed
         horizontal = Vector3.ClampMagnitude(horizontal, maxSpeed);
 
-        // Mantengo la velocidad vertical
+      
         rb.linearVelocity = new Vector3(
             horizontal.x,
             rb.linearVelocity.y,
