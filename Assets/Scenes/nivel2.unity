@@ -6373,7 +6373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468322500}
-  - component: {fileID: 1468322499}
+  - component: {fileID: 1468322501}
   m_Layer: 0
   m_Name: TM
   m_TagString: Untagged
@@ -6381,23 +6381,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1468322499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468322498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9a9c9d26293d8946ad5bec1d0a76a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::triggerMeta2
-  imagenUI: {fileID: 186731237}
-  imagenUI2: {fileID: 199916846}
-  imagenUI3: {fileID: 116083374}
-  points3: 0
-  Finish: 0
 --- !u!4 &1468322500
 Transform:
   m_ObjectHideFlags: 0
@@ -6413,6 +6396,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468322501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468322498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
+  imagenUI: {fileID: 186731237}
+  imagenUI2: {fileID: 199916846}
+  imagenUI3: {fileID: 116083374}
+  points2: 0
+  Finish: 0
+  nombreEscena: Nivel 3.1
 --- !u!1 &1473645080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6592,8 +6593,7 @@ MonoBehaviour:
   speed: 4
   jumpForce: 0
   gameManager: {fileID: 1537715736}
-  tm: {fileID: 0}
-  tm2: {fileID: 1468322499}
+  tm: {fileID: 1468322501}
   respawnPoint: {x: 0, y: 0.92, z: -0.08}
   Puerta: {fileID: 1321113886}
   fallLimit: -100
@@ -7024,7 +7024,7 @@ PrefabInstance:
       addedObject: {fileID: 1618037040}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e3f33e726126a8b45829c2a59728e338, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1618037041}
+      addedObject: {fileID: 1618037045}
   m_SourcePrefab: {fileID: 100100000, guid: e3f33e726126a8b45829c2a59728e338, type: 3}
 --- !u!1 &1618037039 stripped
 GameObject:
@@ -7052,7 +7052,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.020811, y: 2.0208106, z: 2.0208106}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1618037041
+--- !u!114 &1618037045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7061,14 +7061,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618037039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9a9c9d26293d8946ad5bec1d0a76a35, type: 3}
+  m_Script: {fileID: 11500000, guid: 81529e315cb40e344b3eae3d049fade6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::triggerMeta2
+  m_EditorClassIdentifier: Assembly-CSharp::TrigerMeta
   imagenUI: {fileID: 186731237}
   imagenUI2: {fileID: 199916846}
   imagenUI3: {fileID: 116083374}
-  points3: 0
+  points2: 0
   Finish: 0
+  nombreEscena: Nivel 3.1
 --- !u!1 &1662742638
 GameObject:
   m_ObjectHideFlags: 0

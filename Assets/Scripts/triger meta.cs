@@ -11,7 +11,7 @@ public class TrigerMeta : MonoBehaviour
     public int points2;
     public bool Finish;
 
-
+    public string nombreEscena = "nivel2";
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Finish"))
@@ -30,7 +30,7 @@ public class TrigerMeta : MonoBehaviour
 
     public void PasarEscena()
     {
-        SceneManager.LoadScene("nivel2");
+        SceneManager.LoadScene(nombreEscena);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
